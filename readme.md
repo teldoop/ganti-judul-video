@@ -79,6 +79,7 @@ function updateTitleAndDescription() {
 <b>' + years + '</b> adalah penghitung berapa tahun lalu video diupload<br>
 <b>' + months + '</b> adalah penghitung lebih berapa bulan lalu video diupload<br>
 <b>' + days + '</b> adalah penghitung lebih berapa hari lalu video diupload<br>
+<b>\n</b> pindah baris<br>
 <br>
 
 <b>dan jangan lupa juga untuk mengganti:</b><br><br>
