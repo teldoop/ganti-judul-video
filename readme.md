@@ -83,10 +83,10 @@ function updateTitleAndDescription() {
 Note: untuk di deskripsi video (baris ke37), ganti tanda ' menjadi tanda "
 <br><br>
 <b>dan jangan lupa juga untuk mengganti:</b><br><br>
-<b>"ID_VIDEO_KALIAN" (pada baris kedua)</b> dengan ID Video YouTube kalian yang akan kalian ganti judul dan deskripsinya, misalnya url video adalah https://www.youtube.com/watch?v=t4q3GQZHvcg maka IDnya adalah <b>t4q3GQZHvcg</b><br><br>
-<b>"ID_CHANNEL_KALIAN" (pada baris ketiga)</b> dengan ID Channel YouTube kalian <b>(bukan @username atau /c/customurl)</b> yang terdapat video yang akan kalian ganti judul dan deskripsinya, misalnya url channel adalah https://www.youtube.com/channel/UCIbWCZyYUysTkDDNcV-Zqow maka IDnya adalah <b>UCIbWCZyYUysTkDDNcV-Zqow</b><br><br>
-<b>"API_KEY_KALIAN" (pada baris ke4)</b> dengan API key yang terdapat pada project google cloud console kalian<br><br>
-<b>"2021-11-21" (pada baris ke29)</b> dengan tanggal video kalian diupload<br><br>
+<b>ID_VIDEO_KALIAN (pada baris kedua)</b> dengan ID Video YouTube kalian yang akan kalian ganti judul dan deskripsinya, misalnya url video adalah https://www.youtube.com/watch?v=t4q3GQZHvcg maka IDnya adalah <b>t4q3GQZHvcg</b><br><br>
+<b>ID_CHANNEL_KALIAN (pada baris ketiga)</b> dengan ID Channel YouTube kalian <b>(bukan @username atau /c/customurl)</b> yang terdapat video yang akan kalian ganti judul dan deskripsinya, misalnya url channel adalah https://www.youtube.com/channel/UCIbWCZyYUysTkDDNcV-Zqow maka IDnya adalah <b>UCIbWCZyYUysTkDDNcV-Zqow</b><br><br>
+<b>API_KEY_KALIAN (pada baris ke4)</b> dengan API key yang terdapat pada project google cloud console kalian<br><br>
+<b>2021-11-21 (pada baris ke29)</b> dengan tanggal video kalian diupload<br><br>
 dan jangan lupa juga untuk mengganti <b>judul (di antara tanda ' pertama sampai tanda ' terakhir di baris ke16)</b> dan <b>deskripsi (di antara tanda " pertama sampai tanda " terakhir di baris ke37)</b> dan jika kalian ingin nantinya jumlah views, likes, komentar, subscriber, berapa tahun yang lalu, bulan yang lalu, dan hari yang lalu tersinkronkan dengan judul dan deskripsi video, copy dan pastekan beberapa keterangan yang dicetak tebal (keterangan ada di bawah script kedua di step 5 di file readme.md ini) ke lanjutan judul dan deskripsi yang kalian ketik<br><br>
 
 Berikut adalah contoh script (baris ke16) yg sdh berhasil mengubah judul video:<br>
