@@ -79,13 +79,40 @@ function updateTitleAndDescription() {
 <b>' + years + '</b> adalah penghitung berapa tahun lalu video diupload<br>
 <b>' + months + '</b> adalah penghitung lebih berapa bulan lalu video diupload<br>
 <b>' + days + '</b> adalah penghitung lebih berapa hari lalu video diupload<br>
-<b>\n</b> pindah baris<br>
-<br>
-
+<b>\n</b> adalah pindah baris (cuma buat deskripsi, bukan di judul)<br><br>
+Note: untuk di deskripsi video (baris ke37), ganti tanda ' menjadi tanda "
+<br><br>
 <b>dan jangan lupa juga untuk mengganti:</b><br><br>
-<b>"ID_VIDEO_KALIAN" (pada baris kedua)</b> dengan ID Video YouTube kalian yang akan kalian ganti judul dan deskripsinya<br>
-<b>"ID_CHANNEL_KALIAN" (pada baris ketiga)</b> dengan ID Channel YouTube kalian yang terdapat video yang akan kalian ganti judul dan deskripsinya<br>
+<b>"ID_VIDEO_KALIAN" (pada baris kedua)</b> dengan ID Video YouTube kalian yang akan kalian ganti judul dan deskripsinya, misalnya url video adalah https://www.youtube.com/watch?v=t4q3GQZHvcg maka IDnya adalah <b>t4q3GQZHvcg</b><br><br>
+<b>"ID_CHANNEL_KALIAN" (pada baris ketiga)</b> dengan ID Channel YouTube kalian <b>(bukan @username atau /c/customurl)</b> yang terdapat video yang akan kalian ganti judul dan deskripsinya, misalnya url channel adalah https://www.youtube.com/channel/UCIbWCZyYUysTkDDNcV-Zqow maka IDnya adalah <b>UCIbWCZyYUysTkDDNcV-Zqow</b><br><br>
 <b>"API_KEY_KALIAN" (pada baris ke4)</b> dengan API key yang terdapat pada project google cloud console kalian<br><br>
+<b>"2021-11-21" (pada baris ke29)</b> dengan tanggal video kalian diupload<br><br>
+dan jangan lupa juga untuk mengganti <b>judul (di antara tanda ' pertama sampai tanda ' terakhir di baris ke16)</b> dan <b>deskripsi (di antara tanda " pertama sampai tanda " terakhir di baris ke37)</b> dan jika kalian ingin nantinya jumlah views, likes, komentar, subscriber, berapa tahun yang lalu, bulan yang lalu, dan hari yang lalu tersinkronkan dengan judul dan deskripsi video, copy dan pastekan beberapa keterangan yang dicetak tebal (keterangan ada di bawah script kedua di step 5 di file readme.md ini) ke lanjutan judul dan deskripsi yang kalian ketik<br><br>
+
+Berikut adalah contoh script (baris ke16) yg sdh berhasil mengubah judul video:<br>
+```
+var videoTitle = 'Video ini memiliki ' + videoViewsCount + ' views, ' + videoLikeCount + ' like, dan ' + videoCommentCount + ' komentar';
+```
+<br>
+Jika misalnya videonya memiliki 243 views, 4 likes, dan 6 komentar, maka, judul videonya akan menjadi seperti:<br>
+<b>Video ini memiliki 243 views, 4 like, dan 6 komentar</b><br><br>
+
+Dan berikut adalah contoh script (baris ke37) yg sdh berhasil mengubah deskripsi video:<br>
+```
+var description = "Video ini ditonton sebanyak " + videoViewsCount + " kali, di like sebanyak " + videoLikeCount + " kali, dikomentari sebanyak " + videoCommentCount + " kali, diupload " + years + " tahun, " + months + " bulan, dan " + days + " hari yang lalu.\n\nChannel ini memiliki " + subscriber + " subscriber."
+```
+<br>
+Jika misalnya videonya memiliki 243 views, 4 likes, 6 komentar, dan channelnya memiliki 12 subscriber, dan videonya diupload pada 21 November 2021, dan hari ini adalah tanggal 23 Juni 2023, maka deskripsinya akan menjadi seperti:<br><br>
+<b>Video ini ditonton sebanyak 243 kali, di like sebanyak 4 kali, dikomentari sebanyak 6 kali, diupload 1 tahun, 7 bulan, dan 0 hari yang lalu.<br><br>Channel ini memiliki 12 subscriber.</b><br><br>
+
+begitulah scriptnya,, "<br><br>
+<b>Cara kedua untuk mendapatkan ID Channel, jika sudah berhasil dengan cara yg pertama tadi, skip langkah ini:(jika kalian menggunakan hp, buka di google chrome dan klik titik tiga di kanan atas browser, dan centang opsi "Situs desktop", jangan buka di aplikasi YouTube)</b><br>
+- Buka https://www.youtube.com/
+- Klik pp youtube kalian di kanan atas
+- Scroll ke bawah (jika perlu) sampai ketemu "Setelan" lalu diklik
+- di panel sebelah kiri, klik "Setelan lanjutan" yg berada di paling bawah di antara menu-menu lainnya
+- Disitu, kalian langsung bisa melihat ID Channel YouTube kalian, ID Channel terletak di bawah ID pengguna dan di atas "Channel default, atau ID pengguna, tapi di awalannya ditambahkan
+- Di bagian ID channel, klik tombol "Salin" yg berwarna biru
 
 <b>Untuk mendapatkan API KEY:</b><br>
 - Buka https://console.cloud.google.com/
@@ -154,4 +181,4 @@ misalnya jika memilih "Timer menit" pada bagian di atasnya, di bagian "Pilih int
 <b> Step 19</b><br><br>
 Lalu klik simpan, dan judul video kalian akan berubah sesuai yang kalian tentukan
 
-Semoga bermanfaat ☺
+Semoga bermanfaat ☺, dan maaf kalau ada typo
