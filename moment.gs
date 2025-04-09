@@ -1,8 +1,18 @@
-//! moment.js
-//! version : 2.29.4
-//! authors : Tim Wood, Iskren Chernev, Moment.js contributors
-//! license : MIT
-//! momentjs.com
+/*!
+ * Moment.js
+ * version : 2.29.4
+ * authors : Tim Wood, Iskren Chernev, Moment.js contributors
+ * license : MIT
+ * https://momentjs.com
+ *
+ * This is a direct copy of Moment.js used in Google Apps Script format (moment.gs),
+ * included in this repository for compatibility and offline usage.
+ *
+ * The original code is licensed under the MIT license, which permits usage,
+ * modification, distribution, and commercial use with proper attribution.
+ *
+ * Full MIT license text: https://opensource.org/licenses/MIT
+ */
 
 ;(function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
